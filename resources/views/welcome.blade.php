@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div>
+<div class="welcome">
     <div class="container">
         
     </div>
@@ -11,10 +11,10 @@
             <!-- {{-- @dump($comics) --}} -->
             @foreach ($comic as $comic)
             
-                <div class="col-4">
+                <div class="col-3">
                     <!-- <img src="{{ $comic['thumb'] }}" alt="">{{ $comic['thumb'] }} -->
                     <h3>{{ $comic['title'] }}</h3>
-                    <p>{{ $comic['description'] }}</p>
+                    <p>{{ $comic['series'] }}</p>
                     <span>{{ $comic['price'] }}</span>
 
                 </div>
